@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/styled.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/game.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
     <h1 class="header">ROCK-PAPER-SCISSORS</h1>
-    <div class="game">
-        <button class="game__hand">👊</button>
-        <button class="game__hand">✌️</button>
-        <button class="game__hand">🫱</button>
-      
+    <div class="game" id="choices">
+        <button class="game__hand" onclick="playGame('rock')">👊</button>
+        <button class="game__hand" onclick="playGame('scissors')">✌️</button>
+        <button class="game__hand" onclick="playGame('paper')">🫱</button>
+
     </div>
 
     <p class="game__player">PLAYER:</p>
