@@ -9,4 +9,25 @@ const playGame = (playerChoices) => {
 
     const computerChoice = choices[Math.floor(Math.random() * 3)];
 
+    if (playerChoices === computerChoice) {
+        result = "IT'S A TIE!";
+    }
+    else {
+        switch (playerChoices) {
+            case "rock":
+                result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE";
+                break;
+            case "paper":
+                result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE";
+                break;
+            case "scissors":
+                result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE";
+                break;
+        }
+    }
+
+    playerDisplay.textContent = `PLAYER: ${playerChoices}`;
+    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
+    resultDisplay.textContent = result;
 };
+
