@@ -2,7 +2,7 @@ const playerDisplay = document.querySelector('.game__player');
 const computerDisplay = document.querySelector('.game__computer');
 const resultDisplay = document.querySelector('.game__result');
 
-const choices = ["rock", "paper", "scissors"];
+const choices = ["rock🪨", "paper🧻", "scissors✂️"];
 let result = "";
 
 const playGame = (playerChoices) => {
@@ -14,14 +14,14 @@ const playGame = (playerChoices) => {
     }
     else {
         switch (playerChoices) {
-            case "rock":
-                result = (computerChoice === "scissors") ? "YOU WIN!😉" : "YOU LOSE😔";
+            case "rock🪨":
+                result = (computerChoice === "scissors✂️") ? "YOU WIN!😉" : "YOU LOSE😔";
                 break;
-            case "paper":
-                result = (computerChoice === "rock") ? "YOU WIN!😉" : "YOU LOSE😔";
+            case "paper🧻":
+                result = (computerChoice === "rock🪨") ? "YOU WIN!😉" : "YOU LOSE😔";
                 break;
-            case "scissors":
-                result = (computerChoice === "paper") ? "YOU WIN!😉" : "YOU LOSE😔";
+            case "scissors✂️":
+                result = (computerChoice === "paper🧻") ? "YOU WIN!😉" : "YOU LOSE😔";
                 break;
         }
     }
