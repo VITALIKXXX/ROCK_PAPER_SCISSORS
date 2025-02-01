@@ -73,3 +73,31 @@
     font-size: 50px;
     animation: shake 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    .game__hand {
+        font-size: 3rem;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    .game__result {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game__hand {
+        font-size: 2.5rem;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .game {
+        gap: 10px;
+    }
+
+    .game__result {
+        font-size: 30px;
+    }
+}
