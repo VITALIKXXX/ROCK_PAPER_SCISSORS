@@ -21,12 +21,55 @@
     background-color: #3771c1;
 }
 
+.game__result {
+    font-size: 80px;
+    transition: color 0.5s ease-in-out;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .greenText {
     color: green;
     font-size: 50px;
+    animation: grow 1s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .redText {
     color: red;
     font-size: 50px;
+    animation: shake 0.3s ease-in-out;
 }
