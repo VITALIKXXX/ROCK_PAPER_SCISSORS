@@ -102,3 +102,11 @@
         font-size: 30px;
     }
 }
+
+.playerScoreDisplay {
+    color: green;
+}
+
+.computerScoreDisplay {
+    color: red;
+}
