@@ -24,6 +24,7 @@
 .game__result {
     font-size: 80px;
     transition: color 0.5s ease-in-out;
+    margin: auto;
 }
 
 @keyframes grow {
