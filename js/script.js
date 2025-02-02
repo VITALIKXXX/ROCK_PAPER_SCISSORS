@@ -1,9 +1,13 @@
 const playerDisplay = document.querySelector('.game__player');
 const computerDisplay = document.querySelector('.game__computer');
 const resultDisplay = document.querySelector('.game__result');
+const playerScoreDisplay = document.querySelector('.playerScoreDisplay');
+const computerScoreDisplay = document.querySelector('.computerScoreDisplay');
 
 const choices = ["rock🪨", "paper🧻", "scissors✂️"];
 let result = "";
+let playerScore = 0;
+let computerScore = 0;
 
 const playGame = (playerChoices) => {
 
@@ -34,8 +38,12 @@ const playGame = (playerChoices) => {
         resultDisplay.classList.remove("greenText", "redText");
         if (result === "YOU WIN!😉") {
             resultDisplay.classList.add("greenText");
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
         } else if (result === "YOU LOSE😔") {
             resultDisplay.classList.add("redText");
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
         }
     };
 
