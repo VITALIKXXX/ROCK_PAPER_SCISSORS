@@ -5,6 +5,7 @@ const playerScoreDisplay = document.querySelector('.playerScoreDisplay');
 const computerScoreDisplay = document.querySelector('.computerScoreDisplay');
 const winSound = new Audio("sounds/win.mp3");
 const loseSound = new Audio("sounds/lose.mp3");
+const tieSound = new Audio("sounds/tie.mp3");
 
 const choices = ["rock🪨", "paper🧻", "scissors✂️"];
 let result = "";
@@ -16,6 +17,8 @@ const playSound = (result) => {
         winSound.play();
     } else if (result === "YOU LOSE😔") {
         loseSound.play();
+    } else {
+        tieSound.play();
     }
 };
 
