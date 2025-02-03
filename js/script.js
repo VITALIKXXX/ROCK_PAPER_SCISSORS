@@ -3,13 +3,21 @@ const computerDisplay = document.querySelector('.game__computer');
 const resultDisplay = document.querySelector('.game__result');
 const playerScoreDisplay = document.querySelector('.playerScoreDisplay');
 const computerScoreDisplay = document.querySelector('.computerScoreDisplay');
-const winSound = new Audio("sound/win.mp3");
-const loseSound = new Audio("sound/lose.mp3");
+const winSound = new Audio("sounds/win.mp3");
+const loseSound = new Audio("sounds/lose.mp3");
 
 const choices = ["rock🪨", "paper🧻", "scissors✂️"];
 let result = "";
 let playerScore = 0;
 let computerScore = 0;
+
+const playSound = (result) => {
+    if (result === "YOU WIN!😉") {
+        winSound.play();
+    } else if (result === "YOU LOSE😔") {
+        loseSound.play();
+    }
+};
 
 const playGame = (playerChoices) => {
 
@@ -51,6 +59,7 @@ const playGame = (playerChoices) => {
 
     changeColorResult(result);
 
+    playSound(result);
 
 };
 
