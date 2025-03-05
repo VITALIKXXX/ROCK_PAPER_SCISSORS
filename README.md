@@ -1,7 +1,7 @@
 # ROCK_PAPER_SCISSORS
 ## Demo
 
-https://vitalikxxx.github.io/ROCK_PAPER_SCISSORS/
+[ ROCK_PAPER_SCISSORS](https://vitalikxxx.github.io/ROCK_PAPER_SCISSORS/)
 
 Rock Paper Scissors is a simple and fun game where you compete against the computer. Choose between Rock (👊), Paper (🫱), or Scissors (✌️), and the computer will randomly select its choice. The winner is determined by the classic rules:
 
